@@ -172,6 +172,15 @@
        
         <div class="item has-text-centered"> 
         <!-- Your image here -->
+        <img src="static/images/traditional_pipeline.png"  style="height:280px;"/>
+        <h2 class="subtitle has-text-centered">
+          “Traditional multimodal models use RGB images with extra visual inputs like silhouettes or poses, which works for gait but fails for diverse activities. Using text for alignment alone isn't enough.”
+        </h2>
+      </div>
+
+
+        <div class="item has-text-centered"> 
+        <!-- Your image here -->
         <img src="static/images/probe.gif"  style="height:280px; margin-right:60px;"/>
         <img src="static/images/challenge_1.png" style="height: 280px;"/>
         <h2 class="subtitle has-text-centered">
@@ -208,6 +217,43 @@
 <!-- End image carousel -->
 
 
+<!-- Challenges and Solution -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Method</h2>
+      </div>
+    </div>
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       
+        <div class="item has-text-centered"> 
+        <!-- Your image here -->
+        <img src="static/images/pipeline.png"  style="height:280px"/>
+        <h2 class="subtitle has-text-centered"></h2>
+          Our framework takes a video and three text prompts (biometrics, motion, non-biometrics) to disentangle visual features into separate spaces with <b>DisenQ</b>. Identity recognition is then guided by biometrics and relevant motion features, weighted by their relevance through the identification head.
+        </h2>
+      </div>
+
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/disenq.png"  style="height:280px;"/>
+        <h2 class="subtitle has-text-centered">
+          DisenQ replaces the single-query traditional Q-Former with three learnable query sets: biometrics, motion, and non-biometrics. Each refines features via self- and cross-attention with visual and text inputs, producing disentangled spaces. 
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
 <!--BibTex citation -->
   <section class="section is-light" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -217,8 +263,7 @@
   author={Azad, Shehreen and Rawat, Yogesh S},
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   month = {October},
-  year = {2025}
-      }</code></pre>
+  year = {2025}}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
