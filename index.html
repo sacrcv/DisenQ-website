@@ -217,8 +217,8 @@
 <!-- End image carousel -->
 
 
-<!-- Challenges and Solution -->
-<section class="section hero is-light">
+<!-- method -->
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Method</h2>
@@ -232,15 +232,15 @@
        
         <div class="item has-text-centered"> 
         <!-- Your image here -->
-        <img src="static/images/pipeline.png"  style="height:280px"/>
-        <h2 class="subtitle has-text-centered"></h2>
+        <img src="static/images/pipeline.png"  style="height:280px;"/>
+        <h2 class="subtitle has-text-centered">
           Our framework takes a video and three text prompts (biometrics, motion, non-biometrics) to disentangle visual features into separate spaces with <b>DisenQ</b>. Identity recognition is then guided by biometrics and relevant motion features, weighted by their relevance through the identification head.
         </h2>
       </div>
 
       <div class="item has-text-centered">
         <!-- Your image here -->
-        <img src="static/images/disenq.png"  style="height:280px;"/>
+        <img src="static/images/disenq.png"/>
         <h2 class="subtitle has-text-centered">
           DisenQ replaces the single-query traditional Q-Former with three learnable query sets: biometrics, motion, and non-biometrics. Each refines features via self- and cross-attention with visual and text inputs, producing disentangled spaces. 
         </h2>
@@ -251,6 +251,97 @@
 </section>
 <!-- End image carousel -->
 
+
+<!-- quantitative -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Quantitative Analysis</h2>
+      </div>
+    </div>
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       
+        <div class="item has-text-centered"> 
+        <!-- Your image here -->
+        <img src="static/images/quant_1.png"  />
+        <h2 class="subtitle has-text-centered">
+          State-of-the-art performance on activity-biometrics benchmarks: NTU RGB-AB, PKU MMD-AB, Charades-AB.
+        </h2>
+      </div>
+
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/quant_2.png"/>
+        <h2 class="subtitle has-text-centered">
+          Strong generalization ability on traditional video person re-identification dataset MEVID.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- ablation -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <h2 class="title is-3">Ablation Studies</h2>
+    </div> </div>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered has-text-justified"></div>
+      <img src="./static/images/abla_1.png" /> 
+      <h2 class="subtitle has-text-centered">
+        Ablation shows step-wise gain, solving each of the challenges one-by-one.
+      </h2>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Qualitative analysis -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Qualitative Analysis</h2>
+      </div>
+    </div>
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       
+        <div class="item has-text-centered"> 
+        <!-- Your image here -->
+        <img src="static/images/tsne.png"  />
+        <h2 class="subtitle has-text-centered">
+          DisenQ transforms the overlapped baseline feature space into distinct clusters for identity, appearance, and motion, enabling robust recognition.
+        </h2>
+      </div>
+
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/quant_3.png" style="height:280px; margin-right:100px;"/>
+        <img src="static/images/probe_2.gif" style="height:280px; margin-right:60px;"/>
+        <img src="static/images/cross_act_1.gif" style="height:280px; margin-right:10px;"/>
+        <img src="static/images/cross_act_2.gif" style="height:280px;"/>
+        <h2 class="subtitle has-text-centered">
+          Superior generalization across-activities. 
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
 
